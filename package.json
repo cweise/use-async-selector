@@ -1,13 +1,10 @@
 {
   "name": "use-async-selector",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "React hook for asynchronous selectors.",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "scripts": {
-    "build": "babel ./src/index.js --out-file ./lib/index.js",
-    "test": "jest src/",
-    "prebuild": "rimraf lib",
-    "prepublish": "npm run build"
+    "test": "jest src/"
   },
   "repository": {
     "type": "git",

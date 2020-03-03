@@ -12,7 +12,6 @@ node_modules
 package-lock.json
 
 # project files
-src
 test
 examples
 CHANGELOG.md
