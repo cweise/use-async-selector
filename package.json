@@ -1,0 +1,25 @@
+{
+  "name": "use-async-selector",
+  "version": "0.1.0",
+  "description": "React hook for asynchronous selectors.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest src/"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "hooks",
+    "worker"
+  ],
+  "author": "Christoph Weise-Onnen",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": ">= 16.8.x",
+    "react-redux": ">= 7.1.0"
+  },
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-redux": "^7.2.0"
+  }
+}
