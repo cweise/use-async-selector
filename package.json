@@ -1,6 +1,6 @@
 {
   "name": "use-async-selector",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "React hook for asynchronous selectors.",
   "main": "src/index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   "license": "ISC",
   "peerDependencies": {
     "react": ">= 16.8",
-    "redux": ">= 7.1.0"
+    "react-redux": ">= 7.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
