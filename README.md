@@ -70,3 +70,7 @@ const MyComponent = () => {
   console.log(data);
 };
 ```
+
+## Examples
+
+[Web worker example](https://competent-lamport-f43d76.netlify.com/)
