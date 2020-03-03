@@ -4,7 +4,7 @@
   "description": "React hook for asynchronous selectors.",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest src/"
+    "build:web-worker-example": "rimraf ./examples/web-worker/build && cd ./examples/web-worker && npm run build"
   },
   "repository": {
     "type": "git",
@@ -27,9 +27,6 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.6",
     "@babel/preset-env": "^7.8.6",
-    "babel-jest": "^25.1.0",
-    "jest": "^25.1.0",
-    "rimraf": "^3.0.2",
-    "webpack-cli": "^3.3.11"
+    "rimraf": "^3.0.2"
   }
 }
