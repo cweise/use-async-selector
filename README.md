@@ -31,17 +31,17 @@ const MyComponent = () => {
 
 ## Params
 
-| Param | Type     | Description                          |
-| ----- | -------- | ------------------------------------ |
-| func  | function | True, if promise is not resolved yet |
+| Param | Type     | Description                              |
+| ----- | -------- | ---------------------------------------- |
+| func  | function | Function, that needs to return a promise |
 
 ## Result
 
-| Property | Type          | Description                          |
-| -------- | ------------- | ------------------------------------ |
-| loading  | boolean       | True, if promise is not resolved yet |
-| error    | boolean       | True, if promise is rejected         |
-| data     | null \| mixed | Not null, if promise is resolved.    |
+| Property | Type          | Description                                |
+| -------- | ------------- | ------------------------------------------ |
+| loading  | boolean       | True, if promise is not resolved yet       |
+| error    | boolean       | True, if promise is rejected               |
+| data     | null \| mixed | Holds resolved data, if promised resolved. |
 
 ## Setup
 
