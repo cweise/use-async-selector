@@ -10,7 +10,40 @@ We had to do heavy calculations in our redux selectors and wanted to put them in
 npm i use-async-selector
 ```
 
-## How
+## Usage
+
+```javascript
+import { useAsyncSelector } from "use-async-selector";
+
+const myAsyncSelector = async state => fetch(`https://niceurl.com/${state.id}`);
+
+const MyComponent = () => {
+  const { loading, error, data } = useAsyncSelector(myAsyncSelector);
+
+  // do stuff
+  ...
+}
+```
+
+## Function Signature
+
+**useAsyncSelector(func: function): Object**
+
+## Params
+
+| Param | Type     | Description                          |
+| ----- | -------- | ------------------------------------ |
+| func  | function | True, if promise is not resolved yet |
+
+## Result
+
+| Property | Type          | Description                          |
+| -------- | ------------- | ------------------------------------ |
+| loading  | boolean       | True, if promise is not resolved yet |
+| error    | boolean       | True, if promise is rejected         |
+| data     | null \| mixed | Not null, if promise is resolved.    |
+
+## Setup
 
 To demonstrate its power, we are using the **workerize-loader** webpack plugin. But all other async stuff will work too.
 
